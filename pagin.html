@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/gif" href="shivaji-maharaj.gif">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <title>Shivaji Maharaj</title>
+</head>
+<style type="text/css">
+  .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover,
+
+  .list-group-item, .list-group-item:focus, .list-group-item:hover
+  {
+    background: none;
+    margin-top:75px;
+  }
+</style>
+<style type="text/css">
+    body
+    {
+      overflow-x: hidden;
+      background:url('samrat.jpg');
+      background-repeat:no-repeat;
+      background-size: cover;
+    }
+    .container
+    {
+      margin-bottom: 80px;
+    }
+    .list-group
+    {
+      padding-left: 0;
+      margin-bottom: -70px;
+    }
+    .pagination
+    {
+      position:absolute;
+      top:50px;
+      left:30%;
+      transform:translate(-0%,-50%); 
+      display: flex;
+      text-align:center;
+      background: #fff;
+      border-radius: 25px;
+      padding-left: 7px;
+      box-shadow: 1px 1px 36px #000;
+    }
+    .pagination li
+    {
+      list-style: none;
+
+    }
+    .pagination li a
+    {
+      display: block;
+      text-align: center;
+      width: 40px;
+      height:40px;
+      background:#fff;
+      line-height: 40px;
+      color: #262626;
+      border-radius: 4px;
+      margin: 5px;
+      box-shadow: inset 0 5px 10px rgba(0,0,0,.1),0 2px 5px rgba(0,0,0,.5);
+      text-decoration: none;
+    }
+    .pagination li:first-child a
+    {
+      border-radius: 20px 0 0 20px;
+    }
+    .pagination li:last-child a
+    {
+      border-radius:0 20px 20px 0;
+    }
+    .pagination li a:hover
+    {
+      background:#ff006a;
+      color: #fff; 
+    }
+    .pagination > li:first-child > a, .pagination > li:first-child > span
+    {
+      margin-left:unset;
+    }
+    .pagination > li > a, .pagination > li > span
+    {
+      padding: unset;
+    }
+      body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+        .jumbotron
+        {
+            margin-top:200px;padding: 0px;
+            padding: 0px;
+        }
+        #div
+            {
+                margin-bottom:160px;
+            }
+        @media screen and (max-width: 992px)
+        {
+            .jumbotron{
+            margin-top:540px;
+            padding: 0px;
+            }
+            #div
+            {
+                margin-bottom:2px;
+            }
+            #page
+            {
+              margin-top:16pc;
+            }
+            .pagination
+            {
+              position:absolute;
+              top:50px;
+              left:20%;
+              transform:translate(-0%,-50%); 
+              display: contents;
+              text-align:center;
+              background: #fff;
+              border-radius: 25px;
+              padding-left: 7px;
+              box-shadow: 1px 1px 36px #000;
+            }
+            video
+            {
+              width:380px;
+              height:auto;
+            }
+            .list-group-item{border:none;}
+            
+            .list-group
+            {
+              margin-top: -245px;
+            }
+        }
+  </style>
+<body>
+<div class="row" ng-app="myApp" controller="mumCtrl">
+    <div class="container" style="margin-top: 60px;">
+  
+
+    <nav aria-label=...>
+      <ul class=pagination>
+        <li id="previous-page"><a href="javascript:void(0)" aria-label=Previous><span aria-hidden=true>&laquo;</span></a></li>
+      </ul>
+    </nav>
+    <div class="clearfix">
+       <br><br><br>
+    </div>
+    <div id="page">
+      <div class="list-group" data-aos="zoom-in">
+        <a href="javascript:void(0)" class="list-group-item">
+
+       <video autoplay="" controls="" src="Sambhaji Maharaj video/Veer Shivaji part1.mp4" class="col-md-3" title="Shivaji Maharaj Part 1">
+       </video>
+       <video controls="" src="Sambhaji Maharaj video/Veer Shivaji part2.mp4" class="col-md-3" title="Shivaji Maharaj Part 2">  </video>  
+        <video controls="" src="Sambhaji Maharaj video/Veer Shivaji part3.mp4" class="col-md-3"
+        title="Shivaji Maharaj Part 3">  </video>   
+         <video controls="" src="Sambhaji Maharaj video/Veer Shivaji part4.mp4" class="col-md-3" title="Shivaji Maharaj Part 4">  </video> 
+
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+      
+
+      <div class="list-group" data-aos="flip-left">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 5" controls="" src="Sambhaji Maharaj video/Veer Shivaji part5.mp4" class="col-md-3">
+       </video>
+       <video title="Shivaji Maharaj Part 6" controls="" src="Sambhaji Maharaj video/Veer Shivaji part6.mp4" class="col-md-3">  </video>  
+        <video title="Shivaji Maharaj Part 7" controls="" src="Sambhaji Maharaj video/Veer Shivaji part7.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 8" controls="" src="Sambhaji Maharaj video/Veer Shivaji part8.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="flip-right">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 9" controls="" src="Sambhaji Maharaj video/Veer Shivaji part9.mp4" class="col-md-3">
+       </video>
+       <video title="Shivaji Maharaj Part 10" controls="" src="Sambhaji Maharaj video/Veer Shivaji part10.mp4" class="col-md-3">  </video>  
+        <video title="Shivaji Maharaj Part 11" controls="" src="Sambhaji Maharaj video/Veer Shivaji part11.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 12" controls="" src="Sambhaji Maharaj video/Veer Shivaji part12.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-up">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 13" controls="" src="Sambhaji Maharaj video/Veer Shivaji part13.mp4" class="col-md-3">
+       </video>
+       <video title="Shivaji Maharaj Part 14" controls="" src="Sambhaji Maharaj video/Veer Shivaji part14.mp4" class="col-md-3">  </video>  
+        <video title="Shivaji Maharaj Part 15" controls="" src="Sambhaji Maharaj video/Veer Shivaji part15.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 16" controls="" src="Sambhaji Maharaj video/Veer Shivaji part16.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 17" controls="" src="Sambhaji Maharaj video/Veer Shivaji part17.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 18" controls="" src="Sambhaji Maharaj video/Veer Shivaji part18.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 19" controls="" src="Sambhaji Maharaj video/Veer Shivaji part19.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 20" controls="" src="Sambhaji Maharaj video/Veer Shivaji part20.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 21" controls="" src="Sambhaji Maharaj video/Veer Shivaji part21.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 22" controls="" src="Sambhaji Maharaj video/Veer Shivaji part22.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 23" controls="" src="Sambhaji Maharaj video/Veer Shivaji part23.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 24" controls="" src="Sambhaji Maharaj video/Veer Shivaji part24.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 25" controls="" src="Sambhaji Maharaj video/Veer Shivaji part25.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 26" controls="" src="Sambhaji Maharaj video/Veer Shivaji part26.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 27" controls="" src="Sambhaji Maharaj video/Veer Shivaji part27.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 28" controls="" src="Sambhaji Maharaj video/Veer Shivaji part28.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 29" controls="" src="Sambhaji Maharaj video/Veer Shivaji part29.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 30" controls="" src="Sambhaji Maharaj video/Veer Shivaji part30.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 31" controls="" src="Sambhaji Maharaj video/Veer Shivaji part31.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 32" controls="" src="Sambhaji Maharaj video/Veer Shivaji part32.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 33" controls="" src="Sambhaji Maharaj video/Veer Shivaji part33.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 34" controls="" src="Sambhaji Maharaj video/Veer Shivaji part34.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 35" controls="" src="Sambhaji Maharaj video/Veer Shivaji part35.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 36" controls="" src="Sambhaji Maharaj video/Veer Shivaji part36.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+ 
+
+    <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 37" controls="" src="Sambhaji Maharaj video/Veer Shivaji part37.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 38" controls="" src="Sambhaji Maharaj video/Veer Shivaji part38.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 39" controls="" src="Sambhaji Maharaj video/Veer Shivaji part39.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 40" controls="" src="Sambhaji Maharaj video/Veer Shivaji part40.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 41" controls="" src="Sambhaji Maharaj video/Veer Shivaji part41.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 42" controls="" src="Sambhaji Maharaj video/Veer Shivaji part42.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 43" controls="" src="Sambhaji Maharaj video/Veer Shivaji part43.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 44" controls="" src="Sambhaji Maharaj video/Veer Shivaji part44.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 45" controls="" src="Sambhaji Maharaj video/Veer Shivaji part45.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 46" controls="" src="Sambhaji Maharaj video/Veer Shivaji part46.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 47" controls="" src="Sambhaji Maharaj video/Veer Shivaji part47.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 48" controls="" src="Sambhaji Maharaj video/Veer Shivaji part48.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 49" controls="" src="Sambhaji Maharaj video/Veer Shivaji part49.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 50" controls="" src="Sambhaji Maharaj video/Veer Shivaji part50.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 51" controls="" src="Sambhaji Maharaj video/Veer Shivaji part51.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 52" controls="" src="Sambhaji Maharaj video/Veer Shivaji part52.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 53" controls="" src="Sambhaji Maharaj video/Veer Shivaji part53.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 54" controls="" src="Sambhaji Maharaj video/Veer Shivaji part54.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 55" controls="" src="Sambhaji Maharaj video/Veer Shivaji part55.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 56" controls="" src="Sambhaji Maharaj video/Veer Shivaji part56.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 57" controls="" src="Sambhaji Maharaj video/Veer Shivaji part57.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 58" controls="" src="Sambhaji Maharaj video/Veer Shivaji part58.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 59" controls="" src="Sambhaji Maharaj video/Veer Shivaji part59.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 60"controls="" src="Sambhaji Maharaj video/Veer Shivaji part60.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 61" controls="" src="Sambhaji Maharaj video/Veer Shivaji part61.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 62" controls="" src="Sambhaji Maharaj video/Veer Shivaji part62.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 63" controls="" src="Sambhaji Maharaj video/Veer Shivaji part63.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 64"controls="" src="Sambhaji Maharaj video/Veer Shivaji part64.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 65" controls="" src="Sambhaji Maharaj video/Veer Shivaji part65.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 66" controls="" src="Sambhaji Maharaj video/Veer Shivaji part66.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 67" controls="" src="Sambhaji Maharaj video/Veer Shivaji part67.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 68"controls="" src="Sambhaji Maharaj video/Veer Shivaji part68.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 69" controls="" src="Sambhaji Maharaj video/Veer Shivaji part69.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 70" controls="" src="Sambhaji Maharaj video/Veer Shivaji part70.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 71" controls="" src="Sambhaji Maharaj video/Veer Shivaji part71.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 72"controls="" src="Sambhaji Maharaj video/Veer Shivaji part72.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 73" controls="" src="Sambhaji Maharaj video/Veer Shivaji part73.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 74" controls="" src="Sambhaji Maharaj video/Veer Shivaji part74.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 75" controls="" src="Sambhaji Maharaj video/Veer Shivaji part75.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 76"controls="" src="Sambhaji Maharaj video/Veer Shivaji part76.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 77" controls="" src="Sambhaji Maharaj video/Veer Shivaji part77.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 78" controls="" src="Sambhaji Maharaj video/Veer Shivaji part78.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 79" controls="" src="Sambhaji Maharaj video/Veer Shivaji part79.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 80"controls="" src="Sambhaji Maharaj video/Veer Shivaji part80.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 81" controls="" src="Sambhaji Maharaj video/Veer Shivaji part81.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 82" controls="" src="Sambhaji Maharaj video/Veer Shivaji part82.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 83" controls="" src="Sambhaji Maharaj video/Veer Shivaji part83.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 84"controls="" src="Sambhaji Maharaj video/Veer Shivaji part84.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+ <!--/* */--><div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 85" controls="" src="Sambhaji Maharaj video/Veer Shivaji part85.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 86" controls="" src="Sambhaji Maharaj video/Veer Shivaji part86.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 87" controls="" src="Sambhaji Maharaj video/Veer Shivaji part87.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 88"controls="" src="Sambhaji Maharaj video/Veer Shivaji part88.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+      
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 89" controls="" src="Sambhaji Maharaj video/Veer Shivaji part89.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 90" controls="" src="Sambhaji Maharaj video/Veer Shivaji part90.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 91" controls="" src="Sambhaji Maharaj video/Veer Shivaji part91.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 92"controls="" src="Sambhaji Maharaj video/Veer Shivaji part92.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 93" controls="" src="Sambhaji Maharaj video/Veer Shivaji part93.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 94" controls="" src="Sambhaji Maharaj video/Veer Shivaji part94.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 95" controls="" src="Sambhaji Maharaj video/Veer Shivaji part95.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 96"controls="" src="Sambhaji Maharaj video/Veer Shivaji part96.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 97" controls="" src="Sambhaji Maharaj video/Veer Shivaji part97.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 98" controls="" src="Sambhaji Maharaj video/Veer Shivaji part98.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 99" controls="" src="Sambhaji Maharaj video/Veer Shivaji part99.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 100"controls="" src="Sambhaji Maharaj video/Veer Shivaji part100.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 101" controls="" src="Sambhaji Maharaj video/Veer Shivaji part101.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 102" controls="" src="Sambhaji Maharaj video/Veer Shivaji part102.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 103" controls="" src="Sambhaji Maharaj video/Veer Shivaji part103.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 104"controls="" src="Sambhaji Maharaj video/Veer Shivaji part104.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 105" controls="" src="Sambhaji Maharaj video/Veer Shivaji part105.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 106" controls="" src="Sambhaji Maharaj video/Veer Shivaji part106.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 107" controls="" src="Sambhaji Maharaj video/Veer Shivaji part107.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 108"controls="" src="Sambhaji Maharaj video/Veer Shivaji part108.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 109" controls="" src="Sambhaji Maharaj video/Veer Shivaji part109.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 110" controls="" src="Sambhaji Maharaj video/Veer Shivaji part110.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 111" controls="" src="Sambhaji Maharaj video/Veer Shivaji part111.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 112" controls="" src="Sambhaji Maharaj video/Veer Shivaji part112.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 113" controls="" src="Sambhaji Maharaj video/Veer Shivaji part113.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 114" controls="" src="Sambhaji Maharaj video/Veer Shivaji part114.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 115" controls="" src="Sambhaji Maharaj video/Veer Shivaji part115.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 116"controls="" src="Sambhaji Maharaj video/Veer Shivaji part116.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 117" controls="" src="Sambhaji Maharaj video/Veer Shivaji part117.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 118" controls="" src="Sambhaji Maharaj video/Veer Shivaji part118.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 119" controls="" src="Sambhaji Maharaj video/Veer Shivaji part119.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 120"controls="" src="Sambhaji Maharaj video/Veer Shivaji part120.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 121" controls="" src="Sambhaji Maharaj video/Veer Shivaji part121.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 122" controls="" src="Sambhaji Maharaj video/Veer Shivaji part122.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 123" controls="" src="Sambhaji Maharaj video/Veer Shivaji part123.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 124"controls="" src="Sambhaji Maharaj video/Veer Shivaji part124.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 125" controls="" src="Sambhaji Maharaj video/Veer Shivaji part125.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 126" controls="" src="Sambhaji Maharaj video/Veer Shivaji part126.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 127" controls="" src="Sambhaji Maharaj video/Veer Shivaji part127.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 128"controls="" src="Sambhaji Maharaj video/Veer Shivaji part128.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 129" controls="" src="Sambhaji Maharaj video/Veer Shivaji part129.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 130" controls="" src="Sambhaji Maharaj video/Veer Shivaji part130.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 131" controls="" src="Sambhaji Maharaj video/Veer Shivaji part131.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 132"controls="" src="Sambhaji Maharaj video/Veer Shivaji part132.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 133" controls="" src="Sambhaji Maharaj video/Veer Shivaji part133.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 134" controls="" src="Sambhaji Maharaj video/Veer Shivaji part134.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 135" controls="" src="Sambhaji Maharaj video/Veer Shivaji part135.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 136"controls="" src="Sambhaji Maharaj video/Veer Shivaji part136.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 137" controls="" src="Sambhaji Maharaj video/Veer Shivaji part137.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 138" controls="" src="Sambhaji Maharaj video/Veer Shivaji part138.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 139" controls="" src="Sambhaji Maharaj video/Veer Shivaji part139.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 140"controls="" src="Sambhaji Maharaj video/Veer Shivaji part140.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 141" controls="" src="Sambhaji Maharaj video/Veer Shivaji part141.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 142" controls="" src="Sambhaji Maharaj video/Veer Shivaji part142.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 143" controls="" src="Sambhaji Maharaj video/Veer Shivaji part143.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 144"controls="" src="Sambhaji Maharaj video/Veer Shivaji part144.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 145" controls="" src="Sambhaji Maharaj video/Veer Shivaji part145.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 146" controls="" src="Sambhaji Maharaj video/Veer Shivaji part146.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 147" controls="" src="Sambhaji Maharaj video/Veer Shivaji part147.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 148"controls="" src="Sambhaji Maharaj video/Veer Shivaji part148.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 149" controls="" src="Sambhaji Maharaj video/Veer Shivaji part149.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 150" controls="" src="Sambhaji Maharaj video/Veer Shivaji part150.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 151" controls="" src="Sambhaji Maharaj video/Veer Shivaji part151.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 152"controls="" src="Sambhaji Maharaj video/Veer Shivaji part152.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 153" controls="" src="Sambhaji Maharaj video/Veer Shivaji part153.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 154" controls="" src="Sambhaji Maharaj video/Veer Shivaji part154.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 155" controls="" src="Sambhaji Maharaj video/Veer Shivaji part155.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 156"controls="" src="Sambhaji Maharaj video/Veer Shivaji part156.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div> 
+
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 157" controls="" src="Sambhaji Maharaj video/Veer Shivaji part157.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 158" controls="" src="Sambhaji Maharaj video/Veer Shivaji part158.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 159" controls="" src="Sambhaji Maharaj video/Veer Shivaji part159.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 160"controls="" src="Sambhaji Maharaj video/Veer Shivaji part160.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 161" controls="" src="Sambhaji Maharaj video/Veer Shivaji part161.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 162" controls="" src="Sambhaji Maharaj video/Veer Shivaji part162.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 163" controls="" src="Sambhaji Maharaj video/Veer Shivaji part163.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 164"controls="" src="Sambhaji Maharaj video/Veer Shivaji part164.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 165" controls="" src="Sambhaji Maharaj video/Veer Shivaji part165.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 166" controls="" src="Sambhaji Maharaj video/Veer Shivaji part166.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 167" controls="" src="Sambhaji Maharaj video/Veer Shivaji part167.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 168"controls="" src="Sambhaji Maharaj video/Veer Shivaji part168.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 169" controls="" src="Sambhaji Maharaj video/Veer Shivaji part169.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 170" controls="" src="Sambhaji Maharaj video/Veer Shivaji part170.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 171" controls="" src="Sambhaji Maharaj video/Veer Shivaji part171.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 172"controls="" src="Sambhaji Maharaj video/Veer Shivaji part172.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 173" controls="" src="Sambhaji Maharaj video/Veer Shivaji part173.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 174" controls="" src="Sambhaji Maharaj video/Veer Shivaji part174.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 175" controls="" src="Sambhaji Maharaj video/Veer Shivaji part175.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 176"controls="" src="Sambhaji Maharaj video/Veer Shivaji part176.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 177" controls="" src="Sambhaji Maharaj video/Veer Shivaji part177.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 178" controls="" src="Sambhaji Maharaj video/Veer Shivaji part178.mp4" class="col-md-3">  </video>  
+        <video  title="Shivaji Maharaj Part 179" controls="" src="Sambhaji Maharaj video/Veer Shivaji part179.mp4" class="col-md-3">  </video>   
+         <video title="Shivaji Maharaj Part 180"controls="" src="Sambhaji Maharaj video/Veer Shivaji part180.mp4" class="col-md-3">  </video> 
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+      <div class="list-group" data-aos="zoom-in-down">
+        <a href="javascript:void(0)" class="list-group-item">
+          <video title="Shivaji Maharaj Part 181" controls="" src="Sambhaji Maharaj video/Veer Shivaji part181.mp4" class="col-md-3">
+       </video>
+       <video  title="Shivaji Maharaj Part 182" controls="" src="Sambhaji Maharaj video/Veer Shivaji part182.mp4" class="col-md-3">  </video>  
+      
+         <div id="div" style="margin-bottom: 160px;"></div>
+         </a>
+      </div>
+
+       
+
+
+  </div>
+    
+
+  </div>
+  <!-- /container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="jquery-3.2.1.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+ <!-- <script src="scripts.js"></script>-->
+
+
+  <script type="text/javascript">
+    'use strict';
+
+var numberOfItems = $('#page .list-group').length; // Get total number of the items that should be paginated
+var limitPerPage = 6; // Limit of items per each page
+$('#page .list-group:gt(' + (limitPerPage - 1) + ')').hide(); // Hide all items over page limits (e.g., 5th item, 6th item, etc.)
+var totalPages = Math.round(numberOfItems / limitPerPage); // Get number of pages
+$(".pagination").append("<li class='current-page active'><a href='javascript:void(0)'>" + 1 + "</a></li>"); // Add first page marker
+
+// Loop to insert page number for each sets of items equal to page limit (e.g., limit of 4 with 20 total items = insert 5 pages)
+for (var i = 2; i <= totalPages; i++) {
+  $(".pagination").append("<li class='current-page'><a href='javascript:void(0)'>" + i + "</a></li>"); // Insert page number into pagination tabs
+}
+
+// Add next button after all the page numbers  
+$(".pagination").append("<li id='next-page'><a href='javascript:void(0)' aria-label=Next><span aria-hidden=true>&raquo;</span></a></li>");
+
+// Function that displays new items based on page number that was clicked
+$(".pagination li.current-page").on("click", function() {
+  // Check if page number that was clicked on is the current page that is being displayed
+  if ($(this).hasClass('active')) {
+    return false; // Return false (i.e., nothing to do, since user clicked on the page number that is already being displayed)
+  } else {
+    var currentPage = $(this).index(); // Get the current page number
+    $(".pagination li").removeClass('active'); // Remove the 'active' class status from the page that is currently being displayed
+    $(this).addClass('active'); // Add the 'active' class status to the page that was clicked on
+    $("#page .list-group").hide(); // Hide all items in loop, this case, all the list groups
+    var grandTotal = limitPerPage * currentPage; // Get the total number of items up to the page number that was clicked on
+
+    // Loop through total items, selecting a new set of items based on page number
+    for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
+      $("#page .list-group:eq(" + i + ")").show(); // Show items from the new page that was selected
+    }
+  }
+
+});
+
+// Function to navigate to the next page when users click on the next-page id (next page button)
+$("#next-page").on("click", function() {
+  var currentPage = $(".pagination li.active").index(); // Identify the current active page
+  // Check to make sure that navigating to the next page will not exceed the total number of pages
+  if (currentPage === totalPages) {
+    return false; // Return false (i.e., cannot navigate any further, since it would exceed the maximum number of pages)
+  } else {
+    currentPage++; // Increment the page by one
+    $(".pagination li").removeClass('active'); // Remove the 'active' class status from the current page
+    $("#page .list-group").hide(); // Hide all items in the pagination loop
+    var grandTotal = limitPerPage * currentPage; // Get the total number of items up to the page that was selected
+
+    // Loop through total items, selecting a new set of items based on page number
+    for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
+      $("#page .list-group:eq(" + i + ")").show(); // Show items from the new page that was selected
+    }
+
+    $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active'); // Make new page number the 'active' page
+  }
+});
+
+// Function to navigate to the previous page when users click on the previous-page id (previous page button)
+$("#previous-page").on("click", function() {
+  var currentPage = $(".pagination li.active").index(); // Identify the current active page
+  // Check to make sure that users is not on page 1 and attempting to navigating to a previous page
+  if (currentPage === 1) {
+    return false; // Return false (i.e., cannot navigate to a previous page because the current page is page 1)
+  } else {
+    currentPage--; // Decrement page by one
+    $(".pagination li").removeClass('active'); // Remove the 'activate' status class from the previous active page number
+    $("#page .list-group").hide(); // Hide all items in the pagination loop
+    var grandTotal = limitPerPage * currentPage; // Get the total number of items up to the page that was selected
+
+    // Loop through total items, selecting a new set of items based on page number
+    for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
+      $("#page .list-group:eq(" + i + ")").show(); // Show items from the new page that was selected
+    }
+
+    $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active'); // Make new page number the 'active' page
+  }
+});
+</script>
+
+<script type="text/javascript">
+
+  AOS.init({
+    duration:2000,
+  });
+</script>
+</body>
+
+</html>
